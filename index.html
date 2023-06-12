@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./resources/css/style.css">
+        <title>Cheatsheet</title>
+    </head>
+    <body>
+        <header>
+            <div class="mainhead">
+                <h1>HTML &amp CSS REFERENCE</h1>
+            </div>
+            <!-- <nav>
+                <ul>
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">CSS</a></li>
+                </ul>
+            </nav> -->
+        </header>
+        <main>
+            <section>
+                <h2>HTML Lists</h2>
+                <h3>Lists Tags</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Tag</td>
+                            <td>Name</td>
+                            <td>Description</td>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span>&ltol&gt</span></td>
+                            <td>Ordered List</td>
+                            <td>Represents an ordered list of items.</td>
+                        </tr>
+                        <tr>
+                            <td><span>&ltul&gt</span></td>
+                            <td>Unordered List</td>
+                            <td>Represents an unordered list of items.</td>
+                        </tr>
+                        <tr>
+                            <td><span>&ltli&gt</span></td>
+                            <td>List Item</td>
+                            <td>Represents an item in a list.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3>List Attributes</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Attribute</td>
+                            <td>Name</td>
+                            <td>Description</td>
+                            <td>Ordered Lists</td>
+                            <td>Unordered Lists</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span>reversed</span></td>
+                            <td>Reversed</td>
+                            <td>Number the list backwards</td>
+                            <td class="tick">&#10004</td>
+                            <td class="cross">&#10007</td>
+                        </tr>
+                        <tr>
+                            <td><span>start</span></td>
+                            <td>Start</td>
+                            <td>Starting value of the list</td>
+                            <td class="tick">&#10004</td>
+                            <td class="cross">&#10007</td>
+                        </tr>
+                        <tr>
+                            <td><span>type</span></td>
+                            <td>Type</td>
+                            <td>The list marker's kind</td>
+                            <td class="tick">&#10004</td>
+                            <td class="tick">&#10004</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section>
+                <h2>CSS Selectors</h2>
+                <h3>Selectors</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Selector</td>
+                            <td>Name</td>
+                            <td>Specifity Weight</td>
+                            <td>Example</td>
+                            <td>Description</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span>*</span></td>
+                            <td>Universal Selector</td>
+                            <td>0,0,0,0</td>
+                            <td><span>* { color: red; }</span></td>
+                            <td>Selects all elements and applies the specified styles</td>
+                        </tr>
+                        <tr>
+                            <td><span>element</span></td>
+                            <td>Element Selector</td>
+                            <td>0,0,0,1</td>
+                            <td><span>p { font-size: 16px; }</span></td>
+                            <td>Selects all <span>&ltp&gt</span> and sets the font size to 16 pixels</td>
+                        </tr>
+                        <tr>
+                            <td><span>.class</span></td>
+                            <td>Class Selector</td>
+                            <td>0,0,1,0</td>
+                            <td><span>.higlight { background-color: yellow; }</span></td>
+                            <td>Selects elements with the class "higlight" and sets the background color to yellow</td>
+                        </tr>
+                        <tr>
+                            <td><span>#id</span></td>
+                            <td>ID Selector</td>
+                            <td>0,1,0,0</td>
+                            <td><span>#logo { width: 200px }</span></td>
+                            <td>Selects the element with the id "logo" and sets the width to 200 pixels</td>
+                        </tr>
+                        <tr>
+                            <td><span>[atrribute]</span></td>
+                            <td>Attribute Selector</td>
+                            <td>0,0,1,0</td>
+                            <td><span>[type="submit"] { background-color: blue; }</span></td>
+                            <td>Selects elements with the attribute <span>type</span> set to "submit" and sets the background color to blue</td>
+                        </tr>
+                        <tr>
+                            <td><span>:pseudo</span></td>
+                            <td>Pseudo-Class Selector</td>
+                            <td>0,0,1,0</td>
+                            <td><span>a:hover { color: purple; }</span></td>
+                            <td>Selects <span>&lta&gt</span> elements when they are being hovered over and sets the color to purple</td>
+                        </tr>
+                        <tr>
+                            <td><span>::element</span></td>
+                            <td>Pseudo-Element Selector</td>
+                            <td>0,0,1,0</td>
+                            <td><span>p::first-line { font-weight: bold; }</span></td>
+                            <td>Selects the first line of <span>&ltp&gt</span> elements and set the font weight to bold</td>
+                        </tr>
+                        <tr>
+                            <td><span>+</span></td>
+                            <td>Adjacent Sibling Selector</td>
+                            <td>0,0,1,0</td>
+                            <td><span>h2 + p { margin-top: 10px }</span></td>
+                            <td>Selects <span>&ltp&gt</span> elements that directly follow an <span>&lth2&gt</span> element and sets the top margin to 10 pixels</td>
+                        </tr>
+                        <tr>
+                            <td><span>&gt;</span></td>
+                            <td>Child Selector</td>
+                            <td>0,0,1,0</td>
+                            <td><span>ul &gt; li {list-style: none; }</span></td>
+                            <td>Selects <span>&lt;li&gt;</span> elements that are direct children of <span>&lt;ul&gt;</span> elements and removes the bullet points</td>
+                        </tr>
+                        <tr>
+                            <td><span> </span></td>
+                            <td>Descendant Selector</td>
+                            <td>0,0,1,0</td>
+                            <td><span>div span { color: green; }</span></td>
+                            <td>Selects <span>&lt;span&gt;</span> elements that are descendants of <span>&lt;div&gt;</span> elements and sets the color to green</td>
+                        </tr>
+                        <tr>
+                            <td><span>~</span></td>
+                            <td>General Sibling Selector</td>
+                            <td>0,0,1,0</td>
+                            <td><span>h3 ~ p { font-style:italic; }</span></td>
+                            <td>Selects <span>&lt;p&gt;</span>elements that are siblings of an <span>&lt;h3&gt;</span> element and applied italic font style</td>
+                        </tr>
+                        <tr>
+                            <td><span>style=""</span></td>
+                            <td>Inline Style</td>
+                            <td>1,0,0,0</td>
+                            <td><span>&lt;p style="color: blue;"&gt;This is a paragraph.&lt/p&gt;</span></td>
+                            <td>Applies the inline style directly to the <span>&lt;p&gt;</span> element, setting the color to blue</td>
+                        </tr>
+                        <tr>
+                            <td><span>!important</span></td>
+                            <td>Important</td>
+                            <td>&infin;</td>
+                            <td><span>h1 { color: red !important; }</span></td>
+                            <td>Sets the color of all <span>&lt;h1&gt;</span> elements to red, overriding any other specificity rules</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+        <footer>
+            <ul>
+                <li>By Francisco G. Riol Rodríguez</li>
+                <li>2023</li>
+                <li>franriol@gmail.com</li>
+                <li class="lnk"><a href="#">HTML</a></li>
+                <li class="lnk"><a href="#">CSS</a></li>
+            </ul>
+        </footer>
+    </body>
+</html>
