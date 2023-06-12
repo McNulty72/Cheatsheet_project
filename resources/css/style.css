@@ -1,0 +1,159 @@
+body {
+    box-sizing: border-box;
+    background-color: #1c2928;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    box-sizing: border-box;
+    position: fixed;
+    width: 100%;
+}
+.mainhead {
+    width: 100%;
+    height: 150px;
+    background-color: #00B5A8;
+}
+
+nav {
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: #2F5F5D;
+    width: 100%;
+    height: 60px;
+    margin: 10px 0;
+}
+
+li { 
+    display: inline-block;
+    list-style: none;
+}
+
+li a {
+    box-sizing: border-box;
+    background-color: #9c854d;
+    color: white;
+    text-decoration: none;
+    width: 100px;
+    padding: 5px 10px;
+    margin: 2px 10px;
+    font-size: 1.5em;
+}
+
+li a:hover {
+    background-color: #4F4A3E;
+}
+
+h1 {
+    display: block;
+    margin: 10px auto;
+    color: #B1CDCB;
+    width: 500px;
+    line-height: 4.5em;
+}
+
+main {
+    position: fixed;
+    overflow: auto;
+    top: 200px;
+    bottom: 200px;
+    width: 100%;
+    height: 700px;
+    border-top: 2px solid #00B5AB;
+    border-bottom: 2px solid #00B5AB;
+}
+
+section {
+    display: block;
+    width: 100%;
+    color: #B1CDCB;
+    margin: 30px 0;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    bottom: 10px;
+    background-color: #005c55;
+
+}
+
+table {
+    margin: 0 auto;
+    border: 0;
+    border-style: none;
+    border-collapse: collapse;
+    width: 1600px;
+}
+
+thead {
+    background-color: #00B5A8;
+    color: #000;
+    text-align: center;
+}
+
+tbody tr {
+    background-color: #B1CDCB;
+    color: #1C2929;
+    border-bottom: 0;
+}
+
+td {
+    padding: 2px 10px;
+}
+
+td span {
+    background-color: #6c7d7c;
+    color:white;
+    padding: 0 10px;
+    font-family: monospace;
+}
+
+h2, 
+h3 {
+    width: fit-content;
+    margin: 20px auto 10px auto;
+    text-align: center;
+}
+
+h3 {
+    border-bottom: 1px solid white;
+}
+
+tbody tr+tr td {
+    border-top: 1px solid rgb(144, 245, 245);
+}
+
+.cross,
+.tick {
+    text-align: center;
+}
+
+.cross {
+    color:rgb(173, 93, 93)
+}
+
+.tick {
+    color:rgb(18, 134, 94);
+}
+
+ul {
+    width: 100%;
+}
+.lnk {
+    position: relative;
+    left: 1200px
+}
+
+.lnk a{
+    font-size: 1em;
+    background-color: inherit;
+    color: inherit;
+    text-decoration: underline;
+}
+
+.lnk a:hover {
+    background-color: inherit;
+}
